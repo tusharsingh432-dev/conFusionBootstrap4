@@ -1,6 +1,8 @@
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
+    font: sans-serif;
+    font-weight: 500;
 }
 
 .row-content{
@@ -8,18 +10,22 @@
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height: 400px;
+    font: sans-serif;
+    font-weight: 500;
 }
 
 .footer{
     background-color: #D1C4E9;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
+    font: sans-serif;
+    font-weight: 500;
 }
 
 .jumbotron{
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background-color: palevioletred;
+    background-color: #9575CD;
     color: floralwhite;
 }
 
