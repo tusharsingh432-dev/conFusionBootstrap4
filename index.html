@@ -96,34 +96,86 @@
     </header>
     
     <div class="container">
-        <div class="row row-content align-items-center">
+
+        <div class="row row-content">
+            <div class="col-12">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ul>
+                
+                    <!-- The slideshow -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="./img/uthappizza.png" alt="Los Angeles">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-success">$4.99</span></h2>
+                                <h5>Our Lipsmacking Culinary Creations</h5>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="./img/buffet.png" alt="Chicago">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                                <h5>This Month's Promotions</h5>
+                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="./img/alberto.png" alt="New York">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Alberto Somayya</h2>
+                                <h5>Executive Chef</h5>
+                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#homeCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="media col-12 col-sm order-sm-first col-md ">
                 <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center">
                 <div class ="media-body">
-                    <h2 class="mt-0">Uthappizza <h5><span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-success">$4.99</span></h5></h2>
+                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-success">$4.99</span></h2>
                     <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-        <div class="row row-content align-items-center">
+        <!-- <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm col-md media">
                 <div class="media-body">
-                    <h2>Weekend Grand Buffet <h5><span class="badge badge-danger">New</span></h5></h2>
-                    <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                 </div>
                 <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png">
             </div>
-        </div>
+        </div> -->
 
-        <div class="row row-content align-items-center">
+        <!-- <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -135,7 +187,9 @@
                     <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
         <div id="rigester" class="row row-content justify-content-center align-self-center">
             <div class="col-8">
                 <div class="card">
@@ -156,14 +210,6 @@
                                 <label for="5">5</label> &nbsp; &nbsp; &nbsp;
                                 <input type="radio" id="6" name="noOfGuests" value="3">
                                 <label for="6">6</label> &nbsp; &nbsp; &nbsp;
-                                <!--
-                                <input class="col-1" type="radio" id="1" name="1" value="1"><label for="1">1</label>
-                                <div class="col-2"><input type="radio" id="2" name="2" value="2"><label for="2">&nbsp; 2</label></div>
-                                <div class="col-2"><input type="radio" id="3" name="3" value="3"><label for="3">&nbsp; 3</label></div>
-                                <div class="col-2"><input type="radio" id="4" name="4" value="4"><label for="4">&nbsp; 4</label></div>
-                                <div class="col-2"><input type="radio" id="5" name="5" value="5"><label for="5">&nbsp; 5</label></div>
-                                <div class="col-2"><input type="radio" id="6" name="6" value="6"><label for="6">&nbsp; 6</label></div>
--->
                             </div>
                         </div>
                         <div class="form-group row">
@@ -218,15 +264,6 @@
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                         <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-
-<!--
-                        <a href="http://google.com/+"><i class="fa fa-google-plus"></i></a>&nbsp;
-                        <a href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>&nbsp;
-                        <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>&nbsp;
-                        <a href="http://twitter.com/"> <i class="fa fa-twitter"></i></a>&nbsp;
-                        <a href="http://youtube.com/"> <i class="fa fa-youtube"></i></a>&nbsp;
-                        <a href="mailto:"><i class="fa fa-envelope-o"></i></a>
--->
                     </div>
                 </div>
            </div>
