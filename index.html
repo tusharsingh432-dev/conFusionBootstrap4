@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
@@ -32,20 +33,20 @@
                 </ul>
                 &nbsp;&nbsp;&nbsp;
                 <span class="navbar-text">
-                    <button class="btn btn-sm btn-outline-light" data-toggle="modal" data-target="#loginModal">
+                    <button class="btn btn-sm btn-outline-light" id="loginModalBtn">
                     <span class="fa fa-sign-in"></span> Login</button>
                 </span>
             </div>    
         </div>
     </nav>
-  
+
     <div class="modal fade" id="loginModal" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Login</h5>
                     <button type="button" class="close" data-dismiss="modal">
-                        <span class="fa fa-times-circle"></span>
+                        <span class="fa fa-times-circle" style="color: floralwhite"></span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -87,20 +88,20 @@
                 <div class="col-12 col-sm-4 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <button class="btn btn-warning align-self-center col-sm-3 btn-block" data-toggle="modal" data-target="#rigester">
+                <button class="btn btn-warning align-self-center col-sm-3 btn-block" id="reserveBtn">
                     Reserve Table
                 </button>
             </div>
         </div>
     </header>
     
-    <div class="modal fade" id="rigester" role="dialog">
+    <div class="modal fade" id="reserve" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Reserve a Table</h5>
                     <button type="button" class="close" data-dismiss="modal">
-                        <span class="fa fa-times-circle"></span>
+                        <span class="fa fa-times-circle" style="color: floralwhite;"></span>
                     </button>
                 </div>
                 <div class="modal-body">             
@@ -147,6 +148,7 @@
                                     
                         <div class="form-group row">
                             <div class="offset-2 col-sm-10 align-self-center">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                 <button class="btn btn-primary">Reserve</button>
                             </div>
                         </div>    
@@ -297,6 +299,7 @@
            </div>
         </div>
     </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -316,6 +319,14 @@
                 }
             })
         });
+    </script>
+    <script>
+        $('#loginModalBtn').click(function () {
+            $('#loginModal').modal();
+        })
+        $('#reserveBtn').click(function () {
+            $('#reserve').modal();
+        })
     </script>
 </body>
 
